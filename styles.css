@@ -1,0 +1,366 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper
+{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+nav
+{
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(232, 234, 236);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px black;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+nav h2 a
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    font-weight: 100;
+    margin-left: 2vw;
+}
+
+
+nav ul li
+{
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li:hover
+{
+    background-color: rgba(192, 189, 189, 0.979);
+    padding: 10px;
+}
+
+header
+{
+    width: 100%;
+    height: 63%;
+    position: relative;
+}
+
+header img
+{
+  width: 100%;
+  height: 100%;
+}
+
+header h2
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: #000000;
+    opacity: 0.7;
+}
+
+section
+{
+    width: 100%;
+    height: 100%;
+}
+
+.about-section
+{
+    width: 100%;
+    padding: 70px ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    justify-items: center;
+}
+
+.imgsection
+{
+    width: 100%;
+}
+
+.imgsection img
+{
+   width: 90%;
+   opacity: 0.7;
+}
+
+.imgsection-about
+{
+    width: 100%;
+}
+
+.imgsection-about h1
+{
+    width: 80%;
+}
+
+.imgsection-about h1
+{
+    font-size: 2.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: #000000;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.Tradition
+{
+    margin: 20px 0 0 60px;
+}
+
+.imgsection-about p
+{
+    margin-top: 20px;
+    width: 100%;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+
+}
+
+/* about-section-done */
+
+
+hr
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-section
+{
+    width: 100%;
+    padding: 70px ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+
+
+.second-section
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.second-sectionimg img
+{
+    opacity: .8;
+}
+
+.second-section h2
+{
+    line-height: 6rem;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+.second-section h1
+{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+.contact-section
+{
+    padding: 80px;
+}
+
+.contact-section h1
+{
+    font-size: 3rem;
+    font-weight: 100;
+    opacity: .7;
+    padding-bottom: 40px;
+}
+
+.contact-section p
+{
+    line-height: 3rem;
+}
+
+.contact-section .green
+{
+   color: rgb(5, 158, 107);
+}
+
+
+.contact-section form input
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.contact-section button
+{
+    padding: 10px;
+    margin: 10px;
+    opacity: .5;
+    background-color: black;
+    color: wheat;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.developname
+{
+    width: 100%;
+    height: 10vh;
+    background-color: cadetblue;
+    text-align: center;
+    color: white;
+    line-height: 2rem;
+}
+
+@media (max-width:1000px) {
+   
+    header img
+    {
+      width: 100%;
+      height: 100%;
+    }
+    
+   
+    .about-section
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.imgsection
+{
+    margin-bottom: 30px;
+}
+
+.imgsection img
+{
+   width: 100%;
+   opacity: 0.7;
+}
+
+.menu-section
+{
+    width: 100%;
+    padding: 70px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.second-section
+{
+    margin-bottom: 50px;
+}
+
+.second-sectionimg img
+{
+    width: 100%;
+}
+
+}
+
+@media (max-width:600px) {
+   
+    header img
+    {
+      width: 100%;
+      height: 100%;
+    }
+        
+
+    .imgsection-about h1
+{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: #000000;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.second-section h2
+{
+    line-height: 4rem;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+}
+
+@media (max-width:500px) {
+     nav ul li
+     {
+        display: none;
+     }
+
+     nav h2 a
+     {
+        font-size: 15px;
+        color: cadetblue;
+     }
+
+}
+
+@media (max-width:400px) {
+    .imgsection-about h1
+    {
+        font-size: 1.2rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        color: #000000;
+        text-align: center;
+        opacity: 0.7;
+    }
+
+    .imgsection-about
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .imgsection-about p
+    {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+}
